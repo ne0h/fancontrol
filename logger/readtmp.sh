@@ -1,3 +1,4 @@
 #!/bin/sh
-echo `date "+%Y-%m-%d %H:%M:%S"`","`curl -i -X GET http://192.168.1.174/` \
+TEMPERATUR=`curl -s -X GET http://fancontrol/`
+echo `date "+%Y-%m-%d %H:%M:%S"`","${TEMPERATUR:12:5} \
 >> /var/services/homes/max/temperatures/temperatures_`date +%Y-%m-%d`.log
