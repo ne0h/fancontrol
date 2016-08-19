@@ -15,4 +15,4 @@ set xdata time
 set timefmt '%Y-%m-%d %H:%M:%S'
 set xrange['"$VARDATE" 00:00:00':'"$VARDATE" 23:59:59']
 set output 'temperatures_"$VARDATE".svg'
-plot '$1' using 1:2" | gnuplot
+plot '$1' using 1:2 with linespoints" | gnuplot
