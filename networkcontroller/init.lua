@@ -7,7 +7,7 @@ function getTemperatur(input)
 end
 
 wifi.setmode(wifi.STATION)
-wifi.sta.config("ne000h", "866B6EA3F7D824885E48C7D1E2F99861CF19A50C36965A6DD6FF8676959AF0E")
+wifi.sta.config("ne000h", "")
 print(wifi.sta.getip())
 
 srv=net.createServer(net.TCP) 
